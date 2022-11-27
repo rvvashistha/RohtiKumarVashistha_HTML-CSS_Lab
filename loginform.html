@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        video{
+            position: fixed;
+        }
+        body{
+            margin: 0%;
+            background-color: gray;
+        }
+        div{
+            position: absolute;
+            top: 25%;
+            left: 25%;
+            min-width: 350px;
+            border: rgb(247, 239, 239) solid;
+            padding: 30px;
+            text-align: center;
+        }
+        input{
+            width: 200px;
+            padding: 5px;
+            margin: 5px;
+            border-radius: 10px;
+        }
+        button{
+            background-color: rgb(212, 43, 212);
+             padding: 5px;
+             margin: 10px; 
+             font-size: large;
+             font-weight: bolder;
+        } 
+        input:hover{
+            background-color: steelblue;
+            opacity: 0.35;
+        }
+
+    </style>
+</head>
+<body>
+    <section id="block">
+        <video autoplay muted loop >
+            <source src="Background.mp4" type="video/mp4">
+        </video>
+        <div>
+            <form action="" id="lab-form">
+                <h1>Create Gmail Account</h1>
+                
+                <input type="text" title="name" placeholder="Full Name" required>
+                <br>
+                <input type="number" title="contact_no" min="6000000000" max="9999999999" placeholder="Contact Number" required>
+                <br>
+                <input type="email" title="email" placeholder="Enter email id" required>
+                <br>
+                <button type="reset" form="lab-form">Reset</button>
+                <button type="submit" form="lab-form">Submit</button>
+        </form>
+        </div>
+    </section>
+</body>
+</html>
